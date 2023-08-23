@@ -1,1 +1,1 @@
-# NextJsTailwindsds
+# NextJsTailwinds
