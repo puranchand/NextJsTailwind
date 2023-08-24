@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+.frame-3-img {
+  position: absolute;
+  right: 0;
+  top: 31%;
+}
+
+.first-banner {
+  margin-top: 300px;
+}
+
+.about-common-height {
+  height: 500px;
+}
+
+.back-about-view {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.hide-on-hover:hover .back-about-view {
+    z-index: 1 !important;
+}
+
+.accordian-text-content {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.second-banner {
+  min-height: 25px;
+}
+
+.block.header-logo {
+  padding-top: 5px;
+}
+
+.site-name {
+  position: relative;
+  top: -5px;
+}
+
+.hamberger {
+  float: right;
+  padding: 2px 2px;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+   .grid-cols-3{
+    display: grid !important;
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+
+  .text-8xl {
+    font-size: 35px !important;
+  }
+
+  .about-common-height {
+    height: 500px;
+    margin-top: 170px !important;
+  }
+
+  .first-banner {
+    margin-top: 20px !important;
+    height: 40px !important;
+    object-fit: cover;
+  }
+
+  .second-banner {
+    height: 48px !important;
+  }
+
+  .px-9 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .block.header-logo {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 20px;
+  }
+
+  .hamberger {
+    display: inline-block !important;
+  }
+
+}
