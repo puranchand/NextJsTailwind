@@ -1,6 +1,7 @@
 import React from "react";
+import '../styles/globals.css';
 
-export default function Home() {
+export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Hero Section */}

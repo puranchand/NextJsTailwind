@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import '../styles/globals.css';
 
 export default function Onlineshop() {
   const targetDate = new Date("2026-12-31T00:00:00").getTime();
@@ -30,7 +31,7 @@ export default function Onlineshop() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black via-gray-900 to-black text-white flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-r from-black via-gray-900 to-black text-white flex items-center justify-center px-4" style={{textAlign: "center"}}>
       <div className="text-center max-w-xl">
         
         {/* Logo / Brand */}
